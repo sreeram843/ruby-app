@@ -1,9 +1,7 @@
-# models/schedule.rb
-
 class Schedule < ActiveRecord::Base
   self.table_name = 'schedules'
 
-  belongs_to :provider
+  belongs_to :practitioner
 
   validates :practitioner_id, :start_time, :end_time, :schedule_type, presence: true
   validates :schedule_type, inclusion: { in: %w[recurring extra personal holiday administrative] }

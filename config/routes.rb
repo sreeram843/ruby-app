@@ -10,5 +10,5 @@ post '/schedules' do
 end
 
 get '/schedules/:provider_id' do
-  SchedulesController.get_by_provider(params[:provider_id])
+  SchedulesController.get_by_practitioner(params[:provider_id])
 end

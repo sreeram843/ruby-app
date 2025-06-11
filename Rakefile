@@ -1,6 +1,5 @@
-require 'rake'
-require 'active_record'
-require 'require_all'
-require './app'  # load app and models if needed
+# Rakefile
+require 'sinatra/activerecord/rake'
+require './app'  
 
 Dir.glob('lib/tasks/**/*.rake').each { |r| import r }

@@ -62,6 +62,7 @@ GEM
     sinatra-activerecord (2.0.28)
       activerecord (>= 4.1)
       sinatra (>= 1.0)
+    sinatra-cross_origin (0.4.0)
     sqlite3 (2.7.0-arm64-darwin)
     tilt (2.6.0)
     timeout (0.4.3)
@@ -81,6 +82,7 @@ DEPENDENCIES
   sequel
   sinatra
   sinatra-activerecord
+  sinatra-cross_origin
   sqlite3
 
 BUNDLED WITH

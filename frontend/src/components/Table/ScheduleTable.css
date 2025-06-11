@@ -1,0 +1,15 @@
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  text-align: left;
+}
+.schedule-table th {
+  background-color: #f1f5f9;
+  font-weight: 600;
+}
