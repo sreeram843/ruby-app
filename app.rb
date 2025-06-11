@@ -1,10 +1,17 @@
 require 'sinatra'
+require 'sinatra/activerecord'
+require 'require_all'
+
+set :database_file, 'config/database.yml'
+
+require_all 'models'
+require_all 'services'
 
 get '/' do
-  'Welcome to the Ruby App!'
+  "App is running!"
 end
 
 get '/health' do
   status 200
-  'Health Status OK'
+  'Health Status OK 200'
 end
